@@ -156,7 +156,10 @@ html {
   font-weight: 400;
 }
 
-.form-entry input[type="text"] {
+.form-entry input[type="text"],
+.form-entry input[type="tel"],
+.form-entry input[type="number"],
+.form-entry input[type="email"] {
   font-family: "Chakra Petch", serif;
   font-weight: 400;
   font-size: 1rem;
@@ -165,10 +168,6 @@ html {
   border-radius: 5px;
   padding: 5px 10px;
   box-shadow: 4px 4px 5px 0px rgba(6, 230, 241, 0.75);
-}
-
-.form-entry input[type="text"]:active {
-  border: none;
 }
 
 @media only screen and (min-width: 800px) {
