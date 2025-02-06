@@ -114,7 +114,7 @@ html {
   gap: 20px;
   margin: 40px 0px;
   padding: 20px 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   width: 80%;
   background: var(--bg-color);
@@ -133,6 +133,7 @@ html {
   background: var(--bg-color);
   box-shadow: var(--bd-color-container);
   margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 .form-wrapper p {
