@@ -23,47 +23,116 @@
       <form action="" method="get" class="sign-up-form">
         <div class="form-entry">
           <label for="first-name">FIRST NAME</label
-          ><input type="text" id="first-name" placeholder="Ex: Minh" required />
+          ><input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Ex: Minh"
+            required
+          />
+          <span></span>
         </div>
         <div class="form-entry">
           <label for="last-name">LAST NAME</label
-          ><input type="text" id="last-name" placeholder="Ex: Le" required />
+          ><input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Ex: Le"
+            required
+          />
+          <span></span>
         </div>
         <div class="form-entry">
           <label for="school">SCHOOL</label
           ><input
             type="text"
             id="school"
+            name="school"
             placeholder="Ex: Concordia University"
             required
           />
+          <span></span>
         </div>
         <div class="form-entry">
           <label for="student-id">STUDENT ID</label
           ><input
             type="text"
             id="student-id"
+            name="student-id"
             placeholder="Ex: 12345678"
             required
           />
+          <span></span>
         </div>
         <div class="form-entry">
           <label for="phone-number">PHONE NUMBER</label
           ><input
             type="tel"
             id="phone-number"
-            placeholder="Ex: 438999999"
+            name="phone-number"
+            pattern="[0-9]{10}"
+            placeholder="Ex: 438-999-9999"
             required
           />
+          <span></span>
         </div>
         <div class="form-entry">
           <label for="email">E-MAIL</label
           ><input
             type="email"
             id="email"
+            name="email"
             placeholder="Ex: abc@def.xyz"
             required
           />
+          <span></span>
+        </div>
+        <fieldset class="form-field">
+          <legend>IN-PERSON OR ONLINE PARTICIPATION</legend>
+          <div class="radio-entry">
+            <input
+              type="radio"
+              name="participation-type"
+              id="in-person"
+              value="in-person"
+              required
+            />
+            <label for="in-person">In-person</label>
+          </div>
+          <div class="radio-entry">
+            <input
+              type="radio"
+              name="participation-type"
+              id="online"
+              value="online"
+              required
+            />
+            <label for="online">Online</label>
+          </div>
+          <span></span>
+        </fieldset>
+        <div class="form-entry">
+          <label for="shirt-size">SHIRT SIZE</label>
+          <select name="shirt-size" id="shirt-size" required>
+            <option value="" disabled selected>Select your shirt size</option>
+            <option value="extra-small">Extra Small (XS)</option>
+            <option value="small">Small (S)</option>
+            <option value="medium">Medium (M)</option>
+            <option value="large">Large (L)</option>
+            <option value="extra-large">Extra Large (XL)</option>
+          </select>
+          <span></span>
+        </div>
+        <div class="form-entry biography">
+          <label for="editableContent"
+            >TELL US SOMETHING ABOUT YOU AND YOUR MOTIVATION!</label
+          >
+          <div class="editable" contenteditable="true" spellcheck="false"></div>
+          <input type="hidden" name="editableContent" id="editableContent" />
+        </div>
+        <div class="form-entry submission">
+          <button type="submit">REGISTER</button>
         </div>
       </form>
     </div>
