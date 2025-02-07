@@ -270,6 +270,7 @@ button[type="submit"]:hover {
 
 footer {
   margin-bottom: 20px;
+  font-size: clamp(0.5rem, 1vw, 0.7rem);
 }
 
 @media only screen and (min-width: 800px) {
